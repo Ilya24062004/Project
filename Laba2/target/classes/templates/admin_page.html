@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin_page_style.css">
+    <title>AutoNews</title>
+</head>
+
+<body>
+<div class="darker" id="darker"></div>
+<header>
+    <span class="head_title"><a href="/news_page2">AutoNews</a></span>
+    <a class="link_user_page" href="/user_page2"></a>
+    <span class="time" id="time">Настоящее время</span>
+</header>
+<main>
+    <div class="upFrom" id="upForm">
+        <div class="form" id="form">
+            <img class="close" src="close.png" height="12" width="12" id="fromClose"/>
+            <h3> Измените поля </h3>
+            <span class="text"> ID: <span class="text" id="id" ></span></span> <br>
+            <span class="text"> Логин </span> <br>
+            <label for="login">
+                <input type="text" name="login" id="login" class="editInput">
+                <div class="mistake" id="m-login"></div>
+            </label><br>
+            <span class="text"> Почта </span> <br>
+            <label for="email">
+                <input type="text" name="email" id="email" class="editInput">
+                <div class="mistake" id="m-email"></div>
+            </label><br>
+            <span class="text"> Пароль </span> <br>
+            <label for="password">
+                <input type="text" name="password" id="password" class="editInput">
+                <div class="mistake" id="m-password"></div>
+            </label><br>
+            <span class="text"> Роль </span> <br>
+            <label>
+                <select name="roleSelect" id="chooseRole">
+                    <option value="Пользователь">Пользователь</option>
+                    <option value="Администратор">Администратор</option>
+                    <option value="Модератор">Модератор</option>
+                </select>
+            </label> <br>
+            <div>
+                <button class="submit" id="editUser">Сохранить изменения</button>
+            </div>
+        </div>
+    </div>
+    <aside class="background_image1"></aside>
+    <article>
+        <h1>Панель администратора</h1>
+    </article>
+    <table id="table">
+        <tr>
+            <th class="th_id">ID</th>
+            <th class="th_login">Логин</th>
+            <th class="th_email">Почта</th>
+            <th class="th_password">Пароль</th>
+            <th class="th_count">Посещения</th>
+            <th class="th_role">Роль</th>
+            <th class="th_delete">Удалить</th>
+            <th class="th_edit">Изменить</th>
+        </tr>
+    </table>
+    <aside class="background_image2"></aside>
+    <script type="text/javascript" src="admin_page.js"></script>
+    <script src="time.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</main>
+</body>
+</html>

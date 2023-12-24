@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoNews</title>
+    <link rel="stylesheet" href="moder_page_style.css">
+
+</head>
+
+<body>
+<header>
+    <span class="head_title"><a href="/moder_news_page">AutoNews</a></span>
+    <span class="time" id="time"></span>
+</header>
+<main>
+    <aside class="background_image1"></aside>
+    <article>
+        <div class="user_card">
+            <div class="user_image">
+                <img id="avatar">
+            </div>
+            <div class="user_info">
+                <div class="info_block">
+                    <span class="title-text">Логин:</span>
+                    <span class="text" id="login"></span>
+                </div>
+                <div class="info_block">
+                    <span class="title-text">Почта:</span>
+                    <span class="text" id="email"></span>
+                </div>
+                <div class="info_block">
+                    <span class="title-text">Роль:</span>
+                    <span class="text" id="role"></span>
+                </div>
+                <div class="info_block">
+                    <span class="title-text">Количество посещений:</span>
+                    <span class="text" id="enterCounter"></span>
+                </div>
+                <div class="info_block">
+                    <span class="title-text">Количество новостей:</span>
+                    <span class="text">0</span>
+                </div>
+                <input class="add_file" type="file" id="file-upload-input" accept="image/jpeg" name="file">
+                <button class="upload_photo" id="upload"> Загрузить фото </button>
+                <input class="exit" type="url" value="Выйти" id="exit">
+            </div>
+        </div>
+        <h1 id="myNews">Мои новости</h1>
+        <span>
+				<button class="add_news" id="add_news">Добавить новость</button>
+				<span>
+					<button class="add_news" id="await_news">На рассмотрении</button>
+				</span>
+			</span>
+        <form class="add_news_card" id="add_news_card">
+            <div class="add_news_block">
+                <span class="title-text_new">Автор новости: </span>
+                <span class="text" id="author"></span>
+            </div>
+            <div class="add_news_block">
+                <span class="title-text_new">Тема:</span>
+                <input type="text" id="news_topic">
+                <span class="mistake" id="m-theme"></span>
+            </div>
+            <div class="add_news_block">
+                <span class="title-text_new">Заголовок:</span>
+                <input type="text" id="news_title">
+                <span class="mistake" id="m-title"></span>
+            </div>
+            <div class="add_news_block">
+                <span class="title-text_new">Текст:</span>
+                <textarea name="" id="news_text"></textarea>
+                <div class="mistake" id="m-text"></div>
+            </div>
+            <span id="success"></span>
+            <button class="send_news" id="send_news"> Отправить</button>
+        </form>
+        <div id="wrapper">
+
+        </div>
+        <div id="await">
+
+        </div>
+    </article>
+    <aside class="background_image2"></aside>
+    <script type="text/javascript" src="moder_page.js"></script>
+    <script src="time.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</main>
+</body>
+
+</html>

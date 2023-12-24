@@ -1,0 +1,140 @@
+@font-face {
+	font-family: Commissioner;
+	src: url(fonts/Commissioner.ttf);
+}
+
+@font-face {
+	font-family: Ubuntu;
+	src: url(fonts/Ubuntu-Bold.ttf);
+}
+
+body {
+	display: grid;
+	margin: 0px;
+	grid-template-columns: 5fr 3fr;
+	font-family: Commissioner;
+}
+
+.hello_form {
+	height: 100vh;
+	background-image: url("background_enter_page.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+.name {
+	margin-top: 50px; 
+	margin-left: 75px;
+	margin-bottom: 10px;
+	font-family: Ubuntu;
+	font-size: 600%;
+}
+
+.welcome {
+	margin-top: 80px;
+	margin-left: 75px;
+	margin-bottom: 0px;
+	font-size: 30pt;
+	font-weight: bold;
+}
+
+.welcome_text {
+	margin-top: 15px;
+	margin-left: 75px;
+	width: 700px;
+	font-size: 22pt;
+}
+
+.enter {
+	margin-top: 200px;
+	margin-left: 100px;
+	font-family: 'Arial Narrow Bold', sans-serif;
+	font-size: 35pt;
+	font-weight: 700;
+}
+
+.email {
+	display: block;
+	margin-top: 30px;
+	margin-left: 100px;
+	margin-bottom: 20px;
+	border: 2px solid lightgray;
+	border-radius: 0px;
+	font-size: 15pt;
+}
+
+.email:focus {
+	border: 2px solid black;
+	outline: none;
+}
+
+.login {
+	display: block;
+	margin-left: 100px;
+	margin-bottom: 20px;
+	border: 2px solid lightgray;
+	border-radius: 0px;
+	font-size: 15pt;
+}
+
+.login:focus {
+	border: 2px solid black;
+	outline: none;
+}
+
+.password {
+	display: block;
+	margin-left: 100px;
+	margin-bottom: 30px;
+	border: 2px solid lightgray;
+	border-radius: 0px;
+	font-size: 15pt;
+}
+
+.password:focus {
+	border: 2px solid black;
+	outline: none;
+}
+
+.submit {
+	display: block;
+	height: 40px;
+	width: 120px;
+	margin-left: 100px;
+	border-radius: 0px;
+	background-color: black;
+	font-size: 15pt;
+	font-weight: 700;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+
+.submit:hover {
+	background-color: white;
+	color: black;
+}
+
+.to_registration {
+	margin-left: 100px;
+	color: grey;
+}
+
+.to_registration a:link {
+	color: grey;
+	text-decoration: none;
+}
+
+.to_registration a:visited {
+	color: grey;
+}
+
+.to_registration a:hover {
+	text-decoration: underline;
+}
+
+.mistake {
+	font-size: 12px;
+	color:#b00202;
+}
