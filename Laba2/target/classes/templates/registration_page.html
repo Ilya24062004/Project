@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoNews</title>
+    <link rel="stylesheet" type="text/css" href="registration_page_style.css">
+</head>
+
+<body>
+<aside class="hello_form">
+    <h1 class="name">AutoNews</h1>
+    <section>
+        <h2 class="welcome">Добро пожаловать!</h2>
+        <p class="welcome_text">Мы рады Вас видеть на автомобильном портале!Здесь вы найдете самые свежие новости из
+            мира автомобилей, открывая для себя захватывающие истории о последних технологических разработках,
+            инновационных концепт-карах и долгожданных моделях, которые завоевывают сердца автолюбителей со всего мира.
+        </p>
+    </section>
+</aside>
+
+<main class="enter_form">
+    <h1 class="enter">Регистрация</h1>
+    <form action="/registration_page" method="post">
+        <input class="email" type="email" placeholder="Почта" id="email" >
+        <div id = 'email1' class = 'mistake'></div>
+        <input class="login" type="text" placeholder="Логин" id="login" >
+        <div id = 'login1' class = 'mistake'></div>
+        <input class="password" type="password" placeholder="Пароль" id="password" >
+        <div id = 'password1' class = 'mistake'></div>
+        <input class="submit" type="url" value="Далее" id="submit">
+    </form>
+    <p class="to_registration">Уже зарегестрированы? <a href="/">Войти</a></p>
+</main>
+<script type="text/javascript" src="registration_page.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</body>
+</html>

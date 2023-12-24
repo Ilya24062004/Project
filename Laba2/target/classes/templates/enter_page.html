@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoNews</title>
+    <link rel="stylesheet" type="text/css" href="enter_page_style.css">
+</head>
+
+<body>
+<aside class="hello_form">
+    <h1 class="name">AutoNews</h1>
+    <section>
+        <h2 class="welcome">Добро пожаловать!</h2>
+        <p class="welcome_text">Мы рады Вас видеть на автомобильном портале!Здесь вы найдете самые свежие новости из
+            мира автомобилей, открывая для себя захватывающие истории о последних технологических разработках,
+            инновационных концепт-карах и долгожданных моделях, которые завоевывают сердца автолюбителей со всего мира.
+        </p>
+    </section>
+</aside>
+<main class="enter_form">
+    <form action="/">
+        <h1 class="enter">Вход</h1>
+        <input class="login" type="text" placeholder="Логин" name="login" id="login">
+        <div id = 'login1' class = 'mistake'></div>
+        <input class="password" type="password" placeholder="Пароль" name="password" id="password">
+        <div id = 'password1' class = 'mistake'></div>
+        <input class="submit" type="url" value="Войти" id="submit">
+    </form>
+    <p class="to_registration">Не зарегистрированы? <a href="/registration_page">Регистрация</a></p>
+</main>
+
+<script type="text/javascript" src="enter_page.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</body>
+</html>
